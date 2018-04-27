@@ -33,7 +33,7 @@ ComboKey(key)
 ;^9::SendInput {NumpadDot}
 ~0 & 9::SendInput {Backspace}{NumpadDot}
 
-; Win+\    
+; Win+\ 锁屏
 #\ Up::
     SendMessage 0x112, 0xF140, 0, , Program Manager  ; Start screensaver
     Sleep 500

@@ -41,7 +41,7 @@ NumpadIns & F11::send {Volume_Up}
 NumpadIns & F10::send {Volume_Down}
 NumpadIns & F12::send {Volume_Mute}
 
-; Win+\    
+; Win+\ 锁屏
 #\ Up::
     SendMessage 0x112, 0xF140, 0, , Program Manager  ; Start screensaver
     Sleep 500
