@@ -4,7 +4,7 @@ CapsLock::LCtrl
 LCtrl::CapsLock
 
 #UseHook
-; LAlt and IJKL
+; LAlt + IJKL 方向键
 ComboKey(key)
 {
     if GetKeyState("Ctrl")

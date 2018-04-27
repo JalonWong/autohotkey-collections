@@ -9,7 +9,7 @@ CapsLock::LCtrl
 LCtrl::CapsLock
 
 ; Direction
-; NumpadIns and IJKL
+; NumpadIns + IJKL
 NumpadIns & i::SendInput {blind}{Up}
 NumpadIns & k::SendInput {blind}{Down}
 NumpadIns & j::SendInput {blind}{Left}
