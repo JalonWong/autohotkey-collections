@@ -1,8 +1,3 @@
-#MaxHotkeysPerInterval 200
-
-CapsLock::LCtrl
-LCtrl::CapsLock
-
 #UseHook
 ; LAlt + IJKL 方向键
 ComboKey(key)
@@ -28,14 +23,3 @@ ComboKey(key)
 <!`;::send {PgDn}
 <!d::send {Del}
 <!s::send {Backspace}
-
-; Number
-;^9::SendInput {NumpadDot}
-~0 & 9::SendInput {Backspace}{NumpadDot}
-
-; Win+\ 锁屏
-#\ Up::
-    SendMessage 0x112, 0xF140, 0, , Program Manager  ; Start screensaver
-    Sleep 500
-    SendMessage 0x112, 0xF170, 2, , Program Manager  ; Monitor off
-    Return

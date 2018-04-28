@@ -1,15 +1,9 @@
-#MaxHotkeysPerInterval 200
-
 #InputLevel 1
 LAlt::NumpadIns
-LWin::LAlt
+;LWin::LAlt
 
 #InputLevel 0
-CapsLock::LCtrl
-LCtrl::CapsLock
-
 ; Direction
-; NumpadIns + IJKL
 NumpadIns & i::SendInput {blind}{Up}
 NumpadIns & k::SendInput {blind}{Down}
 NumpadIns & j::SendInput {blind}{Left}
@@ -26,9 +20,6 @@ NumpadIns & s::SendInput {Backspace}
 
 NumpadIns & F4::SendInput !{F4}
 
-; Number
-^9::SendInput {NumpadDot}
-
 NumpadIns & Tab::send {LAlt down}{Tab}
 NumpadIns & 1::SendInput {LAlt down}1{LAlt up}
 NumpadIns & 2::SendInput !2
@@ -40,11 +31,3 @@ NumpadIns & 5::SendInput !5
 NumpadIns & F11::send {Volume_Up}
 NumpadIns & F10::send {Volume_Down}
 NumpadIns & F12::send {Volume_Mute}
-
-; Win+\ 锁屏
-#\ Up::
-    SendMessage 0x112, 0xF140, 0, , Program Manager  ; Start screensaver
-    Sleep 500
-    SendMessage 0x112, 0xF170, 2, , Program Manager  ; Monitor off
-    Return
-    
