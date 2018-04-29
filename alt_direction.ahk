@@ -1,5 +1,5 @@
 #UseHook
-; LAlt + IJKL 方向键
+; LAlt + IJKL Direction
 ComboKey(key)
 {
     if GetKeyState("Ctrl")
