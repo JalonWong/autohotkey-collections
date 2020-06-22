@@ -1,12 +1,13 @@
 #UseHook
 ; LAlt + IJKL Direction
-ComboKey(key)
-{
-    if GetKeyState("Ctrl")
+ComboKey(key) {
+    if GetKeyState("Ctrl") {
         key := "^" + key
+    }
     
-    if GetKeyState("Shift")
+    if GetKeyState("Shift") {
         key := "+" + key
+    }
     
     send %key%
 }
