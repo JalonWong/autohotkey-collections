@@ -1,4 +1,4 @@
-#if GetKeyState("ScrollLock", "T") and !GetKeyState("Control") and !GetKeyState("Alt") and !GetKeyState("Win")
+#if GetKeyState("ScrollLock", "T") and !GetKeyState("Control") and !GetKeyState("Alt") and !GetKeyState("LWin") and !GetKeyState("RWin")
 ; QWERTY to Dvorak mapping
 -::[
 =::]
