@@ -1,15 +1,17 @@
+#Requires AutoHotkey v2.0
+
 #UseHook
 ; LAlt + IJKL Direction
 ComboKey(key) {
     if GetKeyState("Ctrl") {
-        key := "^" + key
+        key := "^" key
     }
-    
+
     if GetKeyState("Shift") {
-        key := "+" + key
+        key := "+" key
     }
-    
-    send %key%
+
+    send(key)
 }
 
 *<!i::ComboKey("{Up}")
@@ -18,9 +20,9 @@ ComboKey(key) {
 *<!j::ComboKey("{Left}")
 *<!u::ComboKey("{Home}")
 *<!o::ComboKey("{End}")
-#UseHook off
+#UseHook False
 
-<!p::send {PgUp}
-<!`;::send {PgDn}
-<!d::send {Del}
-<!s::send {Backspace}
+<!p::send("{PgUp}")
+<!`;::send("{PgDn}")
+<!d::send("{Del}")
+<!s::send("{Backspace}")

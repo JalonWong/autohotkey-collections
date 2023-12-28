@@ -1,4 +1,4 @@
-#MaxHotkeysPerInterval 200
+#Requires AutoHotkey v2.0
 
 #include capsL_ctrl.ahk
 #Include screen_off.ahk
