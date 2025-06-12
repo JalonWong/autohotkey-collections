@@ -3,6 +3,8 @@
 ; ~4 & 3::SendInput("{Backspace}{NumpadDot}")
 ^4::SendText(".")
 ^7::SendText(".")
+^9::SendText(".")
+^0::SendText(".")
 ;0 & 9::SendInput {NumpadDot}
 ;0 Up::SendInput {0}
 ;+0::SendInput {)}
